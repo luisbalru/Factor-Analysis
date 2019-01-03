@@ -67,11 +67,34 @@ Así pues, los factores comunes son variables tipificadas de media 0 y varianza 
 
 ## Hipótesis sobre los factores únicos
 
-- La esperanza de cada uno de los factores únicos es nula: $E[e_i] = 0 \hspace{0.5 cm} \forall e_i$
-- La matriz de covarianzas de los factores únicos es la matriz diagonal $\Omega$: $E[e_i e_i'] = \Omega$
+- La esperanza de cada uno de los factores únicos es nula: $E[e] = 0 $
+- La matriz de covarianzas de los factores únicos es la matriz diagonal $\Omega$: $E[e e'] = \Omega$
 
 Por tanto, las varianzas de los factores únicos pueden ser distintas, y además los factores únicos están correlacionados entre sí.
 
 - La matriz de covarianzas entre los factores comunes y los factores únicos es la matriz nula: $E[f e'] = 0$
 
 Para poder hacer inferencia en cada variable de forma que permita distinguir entre los factores comunes y el factor único es necesario postular que los factores comunes no tienen correlación con el factor único.  
+
+## Propiedades del modelo
+
+Dado que las variables $(X_1,X_2,\dots,X_p)$ son tipificadas, su matriz de covarianzas es igual a la matriz de correlación poblacional $R_p$:
+
+$$ E[x x'] = R_p =
+    \begin{bmatrix}
+     1 & \rho_{12} & \dots & \rho_{1p} \\
+     \rho_{21} & 1 & \dots & \rho_{2p} \\
+     \vdots & \vdots & \ddots & \vdots \\
+     \rho_{p1} & \rho_{p2} & \dots & 1
+    \end{bmatrix}
+$$
+
+Como son variables tipificadas, la varianza de cada una de ellas es 1. La varianza total de las $p$ variables $X_i$ será $p$.
+
+Considerando $x = Lf+e$, la matriz de correlación poblacional $R_p$ se puede descomponer de la siguiente forma:
+
+## Propiedades del modelo
+
+$$ R_p = E[x x'] = E[(Lf+e)(Lf+e)'] = E[(Lf+e)(f'L'+e')] = $$ $$ E[Lff'L'+Lfe'+ef'L'+ee'] = L E[f f']L' + LE[fe'] + E[ef']L' + E[ee'] =$$ $$LIL' + \Omega = LL' + \Omega  \Rightarrow R_p = LL' + \Omega$$
+
+En la descomposicion, $LL'$ es la parte correspondiente a los factores comunes y $\Omega$ es la matriz de covarianzas de los factores únicos.  
