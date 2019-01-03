@@ -3,7 +3,7 @@ FILTERS:=filters/env.hs filters/pandoc-crossref pandoc-citeproc
 PFLAGS:=$(foreach filter,$(FILTERS),-F $(filter))
 
 PR_FOLDER:=./presentacion
-PR_SECTIONS:=
+PR_SECTIONS:=intro.md introduccion.md modelo.md
 PR_SRCS:= $(foreach section, $(PR_SECTIONS), $(PR_FOLDER)/$(section))
 
 PDFS:=presentacion.pdf
