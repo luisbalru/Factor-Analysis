@@ -96,5 +96,35 @@ Considerando $x = Lf+e$, la matriz de correlación poblacional $R_p$ se puede de
 ## Propiedades del modelo
 
 $$ R_p = E[x x'] = E[(Lf+e)(Lf+e)'] = E[(Lf+e)(f'L'+e')] = $$ $$ E[Lff'L'+Lfe'+ef'L'+ee'] = L E[f f']L' + LE[fe'] + E[ef']L' + E[ee'] =$$ $$LIL' + \Omega = LL' + \Omega  \Rightarrow R_p = LL' + \Omega$$
-
 En la descomposicion, $LL'$ es la parte correspondiente a los factores comunes y $\Omega$ es la matriz de covarianzas de los factores únicos.  
+
+Veámosla en más detalle:
+
+$$\begin{bmatrix}
+   1 & \rho_{12} & \dots & \rho_{1p} \\
+   \rho_{21} & 1 & \dots & \rho_{2p} \\
+   \vdots & \vdots & \ddots & \vdots \\
+   \rho_{p1} & \rho_{p2} & \dots & 1
+  \end{bmatrix} =
+
+    \begin{bmatrix}
+      l_{11} & l_{12} & \dots & l_{1m} \\
+      l_{21} & l_{22} & \dots & l_{2m} \\
+      \vdots & \vdots & \ddots & \vdots \\
+      l_{p1} & l_{p2} & \dots & l_{pm}
+    \end{bmatrix}
+
+    \begin{bmatrix}
+      l_{11} & l_{21} & \dots & l_{p1} \\
+      l_{12} & l_{22} & \dots & l_{p2} \\
+      \vdots & \vdots & \ddots & \vdots \\
+      l_{1m} & l_{2m} & \dots & l_{pm}
+    \end{bmatrix} +
+
+    \begin{bmatrix}
+      \omega_1^2 & 0 & \dots & 0 \\
+      0 & \omega_2^2 & \dots & 0 \\
+      \vdots & \vdots & \ddots & \vdots \\
+      0 & 0 & \dots & \omega_p^2
+    \end{bmatrix}
+$$
