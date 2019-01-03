@@ -1,0 +1,56 @@
+% pandoc-crossref START
+% CAUTION: Deleting these lines might cause unexpected behavior
+% when using pandoc-crossref
+\makeatletter
+\@ifpackageloaded{subfig}{}{\usepackage{subfig}}
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\captionsetup[subfloat]{margin=0.5em}
+\AtBeginDocument{%
+\renewcommand*\figurename{}
+\renewcommand*\tablename{}
+}
+\AtBeginDocument{%
+\renewcommand*\listfigurename{}
+\renewcommand*\listtablename{}
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{}
+\newcommand*\listoflistings{\listof{codelisting}{}}
+\makeatother
+% pandoc-crossref END
+
+\usepackage{amsthm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Entornos matemáticos %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{corollary}{Colorario}[theorem]
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{proposition}{Proposición}[section]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definición}[section]
+\newtheorem{principle}{Principio}
+\newtheorem{algorithm}{Algoritmo}
+
+\theoremstyle{remark}
+\newtheorem*{claim}{Afirmación}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Comandos matemáticas %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\bra}[1]{\left\langle#1\right|}
+\newcommand{\ket}[1]{\left|#1\right\rangle}
+\newcommand{\bk}[2]{\langle #1|#2\rangle}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\usepackage[spanish, es-nodecimaldot]{babel}
