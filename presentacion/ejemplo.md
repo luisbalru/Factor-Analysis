@@ -53,3 +53,10 @@ Aplico Análisis Factorial sobre los datos con la función fa(). En principio, c
 - DC, DMC, temp y wind definen el factor 1
 - X,Y el factor 2
 - ISI y FFMC el factor 3
+
+
+
+## Aplicación sobre un dataset: Forest Fire 
+
+![Matriz de correlaciones y carga de factores respescto a variables](./presentacion/imgs/matrix.png)
+
