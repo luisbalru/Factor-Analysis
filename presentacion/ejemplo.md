@@ -8,15 +8,18 @@
 
 ## Aplicación sobre un dataset: Forest Fire
 
-![Tabla resumen del dataset](imgs/tabla.png)
+![Tabla resumen del dataset](./presentacion/imgs/tabla.png)
 
 - FFMC: Fine Fuel Moisture Code (humedad sobre la superficie del terreno y los restos)
 - DMC: Duff Moisture Code (índice de humedad entre las capas orgánicas del suelo)
 - DC: Drought Code (humedad de las capas orgánicas profundas)
 - ISI: Initial Spread Index  (índice de propagación inicial)
 
+## Aplicación sobre un dataset: Forest Fire
+
+
 Veamos qué variables son relevantes con el test Kaiser-Meyer-Olkin del paquete psych
 
-![KMO](imgs/kmo.png)
+![KMO](./presentacion/imgs/kmo.png)
 
-![Resultados KMO](imgs/kmo-r.png)
+![Resultados KMO](./presentacion/imgs/kmo-r.png)
