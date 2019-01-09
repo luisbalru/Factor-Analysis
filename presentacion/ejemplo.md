@@ -5,3 +5,18 @@
 - psych: Librería de propósito general para teoría de la psicometría y psicología experimental. Sus funciones son fundamentalmente para análisis multivariante usando análisis factorial, PCA o clustering.
 - FactoMineR: Librería especializada en análisis exploratorio de datos. Es especialmente potente para PCA con variables cuantitativas y análisis factorial múltiple cuando las variables están estructuradas en grupos.
 - robustfa: Solución orientada a objetos para análisis factorial robusto
+
+## Aplicación sobre un dataset: Forest Fire
+
+![Tabla resumen del dataset](imgs/tabla.png)
+
+- FFMC: Fine Fuel Moisture Code (humedad sobre la superficie del terreno y los restos)
+- DMC: Duff Moisture Code (índice de humedad entre las capas orgánicas del suelo)
+- DC: Drought Code (humedad de las capas orgánicas profundas)
+- ISI: Initial Spread Index  (índice de propagación inicial)
+
+Veamos qué variables son relevantes con el test Kaiser-Meyer-Olkin del paquete psych
+
+![KMO](imgs/kmo.png)
+
+![Resultados KMO](imgs/kmo-r.png)

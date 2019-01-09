@@ -1,3 +1,9 @@
+install.packages("dplyr")
+install.packages("psych")
+install.packages("ggplot2")
+install.packages("tidyr")
+install.packages("gridExtra")
+
 url <- "https://archive.ics.uci.edu/ml/machine-learning-databases/forest-fires/forestfires.csv"
 fires <- read.csv(url)
 
@@ -17,6 +23,8 @@ fires$rain <- NULL
 fires_corr <- cor(fires)
 round(fires_corr, 2)
 
+install.packages("GPArotation")
+library(GPArotation)
 nfactors <- 3
 nvariables <- dim(fires_corr)[1]
 factors <- fa(r = fires_corr, nfactors = nfactors, rotate = "oblimin")
