@@ -34,6 +34,14 @@ MSA es la medida para la exclusión de variables. Si MSA < 0.5, la variable debe
 
 ![Matriz de correlación](./presentacion/imgs/cor-sal.png)
 
-Aplico Análisis Factorial sobre los datos con la función fa(). En principio, con tres factores.
+## Aplicación sobre un dataset: Forest Fire 
+
+Aplico Análisis Factorial sobre los datos con la función fa(). En principio, con tres factores (gracias al criterio de de Kaiser aplicado sobre una representación que relaciona valores propios y la varianza explicada acumulada).
 
 ![Análisis Factorial con 3 factores](./presentacion/imgs/fa1.png)
+
+## Aplicación sobre un dataset: Forest Fire 
+
+![Código para la especificación de variables](./presentacion/imgs/g1.png)
+
+![Carga de los factores](./presentacion/imgs/loading.png)
