@@ -23,3 +23,11 @@ Veamos qué variables son relevantes con el test Kaiser-Meyer-Olkin del paquete 
 ![KMO](./presentacion/imgs/kmo.png)
 
 ![Resultados KMO](./presentacion/imgs/kmo-r.png)
+
+## Aplicación sobre un dataset: Forest Fire
+
+MSA es la medida para la exclusión de variables. Si MSA < 0.5, la variable debería ser eliminada. Si MSA > 0.6, es adecuada y si MSA > 0.8 es muy adecuada para análisis factorial. Elimino las innecesarias y calculo la matriz de correlación con cor()
+
+![Eliminación y correlación](./presentacion/imgs/cor.png)
+
+![Matriz de correlación](./presentacion/imgs/cor-sal.png)
