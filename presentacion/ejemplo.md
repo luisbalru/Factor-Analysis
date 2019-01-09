@@ -54,9 +54,11 @@ Aplico Análisis Factorial sobre los datos con la función fa(). En principio, c
 - X,Y el factor 2
 - ISI y FFMC el factor 3
 
+# Bibliografía 
 
+## Referencias
 
-## Aplicación sobre un dataset: Forest Fire 
-
-![Matriz de correlaciones y carga de factores respescto a variables](./presentacion/imgs/matrix.png)
-
+- http://estadistica.net/
+- Härdle, Hlávka: *Multivariate Statistics*
+- Material del profesor Juan Miguel Marín Diazaraque, UC3M
+- R-CRAN
