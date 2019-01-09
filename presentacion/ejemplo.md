@@ -44,4 +44,10 @@ Aplico Análisis Factorial sobre los datos con la función fa(). En principio, c
 
 ![Código para la especificación de variables](./presentacion/imgs/g1.png)
 
+## Aplicación sobre un dataset: Forest Fire 
+
 ![Carga de los factores](./presentacion/imgs/loading.png)
+
+- DC, DMC, temp y wind definen el factor 1
+- X,Y el factor 2
+- ISI y FFMC el 3
